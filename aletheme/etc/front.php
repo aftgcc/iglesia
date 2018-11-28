@@ -41,7 +41,7 @@ function ale_enqueue_styles() {
 
 	// add general css file
 	wp_register_style( 'aletheme_general_css', THEME_URL . '/css/general.css', array(), ALETHEME_THEME_VERSION, 'all');
-	wp_register_style( 'aletheme_fontawesome', THEME_URL . '/css/fontawesome.min.css', array(), ALETHEME_THEME_VERSION, 'all');
+	wp_register_style( 'aletheme_fontawesome', THEME_URL . '/css/all.min.css', array(), ALETHEME_THEME_VERSION, 'all');
     wp_enqueue_style('aletheme_general_css');
     wp_enqueue_style('aletheme_fontawesome');
 }
