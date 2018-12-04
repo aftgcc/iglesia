@@ -225,3 +225,26 @@
 	*display: inline;
 	*zoom: 1;
 }
+
+.placeholder(@color: inherit, @style: normal, @size: inherit) {
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: @color;
+    font-style: @style;
+    font-size: @size;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: @color;
+    font-style: @style;
+    font-size: @size;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: @color;
+    font-style: @style;
+    font-size: @size;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: @color;
+    font-style: @style;
+    font-size: @size;
+  }
+}

@@ -15,6 +15,15 @@ jQuery(function($) {
         controlNav: false
     });
 
+
+
+
+    $('.menu_icon i.fa-bars').on('click', function(){
+        $('.menu_icon i.fa-bars').css('display','none');
+        $('.menu_icon i.fa-times').css('display','block');
+
+        $('.top_navigation').css('display','block');
+    });
 });
 
 Modernizr.addTest('ipad', function () {
